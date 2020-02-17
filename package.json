@@ -1,0 +1,19 @@
+{
+  "name": "petshop-node",
+  "version": "1.0.0",
+  "description": "Projeto de Petshop criado em aula",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://adlermo@github.com/adlermo/petshop-node.git"
+  },
+  "author": "adlermo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adlermo/petshop-node/issues"
+  },
+  "homepage": "https://github.com/adlermo/petshop-node#readme"
+}
