@@ -1,7 +1,11 @@
 let listaDePets = [];
 
-const addPets = (nome) => {
-    listaDePets.push(nome)
+const addPets = (...nome) => {
+    if(typeof nome == "Array"){
+        nome.forEach( n => listaDePets.push(n))
+    } else {
+        listaDePets.push(nome)
+    }
     return `Pet ${nome} cadastrado com sucesso!`
 }
 
@@ -12,9 +16,9 @@ const listPets = () => {
     })
     return list
 }
-
-addPets("Bob")
-addPets("Rex")
-addPets("Dino")
-
+console.log(
+addPets("Bob", "Nutt")
+)
+addPets("Rex");
+addPets("Dino");
 module.exports = { listPets, addPets }
